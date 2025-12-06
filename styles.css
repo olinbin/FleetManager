@@ -19,6 +19,33 @@ body {
     padding: 0 20px;
 }
 
+/* 面包屑导航 */
+.breadcrumbs {
+    background-color: #e9ecef;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    list-style: none;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: " > ";
+    margin: 0 5px;
+    color: #6c757d;
+}
+
+.breadcrumbs a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
 /* 头部样式 */
 header {
     background-color: #fff;
