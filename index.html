@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Manager - Lightweight Fleet Management System</title>
+    <meta name="description" content="Fleet Manager is a lightweight SaaS management system for individuals and micro fleets, focusing on vehicle asset management, trip tracking, expense recording, and maintenance reminders.">
+    <meta name="keywords" content="fleet management, vehicle management, trip tracking, expense recording, maintenance reminders, micro fleet">
+    <meta name="author" content="Fleet Manager Team">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="baidu-site-verification" content="code-verify-key">
+    <link rel="canonical" href="https://example.com/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Fleet Manager",
+      "url": "https://example.com/",
+      "description": "Lightweight Fleet Management System",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://example.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script>
+        // Language detection and redirection
+        (function() {
+            // Check if language is already set in localStorage
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                // If saved language is Chinese, redirect to Chinese version
+                if (savedLanguage === 'zh') {
+                    window.location.href = 'zh/index.html';
+                }
+                return;
+            }
+
+            // Detect browser language
+            const browserLanguage = navigator.language || navigator.userLanguage;
+            const languageCode = browserLanguage.split('-')[0];
+
+            // Detect user region using IP geolocation (fallback)
+            fetch('https://ipapi.co/json/')
+                .then(response => response.json())
+                .then(data => {
+                    const countryCode = data.country_code;
+                    // If user is in China or browser language is Chinese, redirect to Chinese version
+                    if (countryCode === 'CN' || languageCode === 'zh') {
+                        window.location.href = 'zh/index.html';
+                    }
+                })
+                .catch(() => {
+                    // Fallback to browser language only if geolocation fails
+                    if (languageCode === 'zh') {
+                        window.location.href = 'zh/index.html';
+                    }
+                });
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Fleet Manager</h1>
+                <p>Lightweight Fleet Management System</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch">
+                <a href="index.html" class="active" onclick="localStorage.setItem('preferredLanguage', 'en');">English</a>
+                <a href="zh/index.html" onclick="localStorage.setItem('preferredLanguage', 'zh');">中文</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Easy Vehicle Management for Individuals and Small Fleets</h2>
+                <p>Get started in 10 minutes, no professional training required. Clearly track each vehicle's cost and status.</p>
+                <a href="features.html" class="cta-button">Learn More</a>
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="container">
+                <h2>Product Overview</h2>
+                <p>Fleet Manager is a lightweight SaaS management system for international individual users and micro fleets with fewer than 10 vehicles. The product focuses on core functions such as vehicle asset management, trip tracking, expense recording, and maintenance reminders, helping users efficiently manage their vehicles through a simple and intuitive interface.</p>
+            </div>
+        </section>
+
+        <section class="key-values">
+            <div class="container">
+                <h2>Core Values</h2>
+                <div class="value-cards">
+                    <div class="card">
+                        <h3>Simple Operation</h3>
+                        <p>Get started in 10 minutes, no professional training required</p>
+                    </div>
+                    <div class="card">
+                        <h3>Cross-Platform</h3>
+                        <p>Seamless experience on desktop and mobile H5</p>
+                    </div>
+                    <div class="card">
+                        <h3>Transparent Costs</h3>
+                        <p>Clearly track costs for each vehicle and trip</p>
+                    </div>
+                    <div class="card">
+                        <h3>Smart Reminders</h3>
+                        <p>Never miss important matters</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="target-users">
+            <div class="container">
+                <h2>Target Users</h2>
+                <div class="user-cards">
+                    <div class="card">
+                        <h3>Individual Landlords</h3>
+                        <p>Own 3-5 rental properties with 1 vehicle each</p>
+                    </div>
+                    <div class="card">
+                        <h3>Small Farmers</h3>
+                        <p>Own 2-3 agricultural vehicles</p>
+                    </div>
+                    <div class="card">
+                        <h3>Freelancers</h3>
+                        <p>Own 1 main vehicle + 1-2 special-purpose vehicles</p>
+                    </div>
+                    <div class="card">
+                        <h3>Micro E-commerce</h3>
+                        <p>2-3 delivery vehicles</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fleet Manager</h3>
+                    <p>Making fleet management simple</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:olinbin@hotmail.com" style="color: white; text-decoration: underline;">olinbin@hotmail.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fleet Manager. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
