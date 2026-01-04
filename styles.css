@@ -197,6 +197,31 @@ nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.cta-button.primary {
+    background-color: #667eea;
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: #5568d3;
+}
+
+.cta-button.secondary {
+    background-color: white;
+    color: #667eea;
+}
+
+.cta-button.secondary:hover {
+    background-color: #f8f9fa;
+}
+
 @media (max-width: 768px) {
     .hero {
         padding: 3rem 0;

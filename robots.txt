@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://example.com/sitemap.xml
-Sitemap: https://example.com/zh/sitemap.xml
+Sitemap: https://www.carsmanager.net/sitemap.xml
+Sitemap: https://www.carsmanager.net/zh/sitemap.xml
