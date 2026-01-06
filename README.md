@@ -137,7 +137,7 @@ Users can also manually switch languages using the language toggle in the header
 
 ### Update Contact Information
 
-Replace `olinbin@hotmail.com` with your actual email address in all HTML files.
+Replace `chulu365@hotmail.com` with your actual email address in all HTML files.
 
 ### Update Domain Names
 
@@ -187,7 +187,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 
 For questions or support:
-- Email: [olinbin@hotmail.com](mailto:olinbin@hotmail.com)
+- Email: [chulu365@hotmail.com](mailto:chulu365@hotmail.com)
 - Website: [https://www.carsmanager.net](https://www.carsmanager.net)
 
 ## 🙏 Acknowledgments
